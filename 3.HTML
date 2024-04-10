@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+integrity="sha384zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrt
+xUkn" crossorigin="anonymous">
+ <title>change the hyperlink and the text</title>
+</head>
+<BODY>
+    <div class="container">
+        <h1>Write jQuery Code to change the hyperlink and the text of an existing link</h1>
+        <hr>
+        <button type="button" class="btn btn-outline-info"><a href="https://nstidehradun.dgt.gov.in/" >NSTI Dehradun</a></button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+       integrity="sha384DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrC
+       XaRkfj"
+        crossorigin="anonymous"></script>
+        <script>
+        $("a").attr("href", "https://nstidehradun.dgt.gov.in/");
+        $("a").text("NSTI Dehradun - jQuery");
+        </script>
+     <hr><hr>
+     <div class="container text-danger">
+    <h1> How to Print a Page Using jQuery</h1>
+    <div><h3>To Print a Page Using JQuery</h3>
+        <a href="#" class="print">Print</a>
+    </div>
+</div>
+<script>
+$('a.print').click(function(){
+ window.print();
+ return false;
+ });
+</script>
+<div class="reting"></div>
+<script>
+    let number = 0;
+    console.log(number++);
+    console.log(++number);
+    console.log(number);
+</script>
+       </body>
+       </html>
+       

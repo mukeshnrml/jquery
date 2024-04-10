@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="cls">jQuery Selector </h1>
+    <p class="clss fss">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio accusantium facere magni nulla error ut? Beatae laudantium incidunt hic, molestiae eum autem explicabo illo corporis, accusamus pariatur iusto at.</p>
+    <hr>
+    <h2 class="cls">About jQuery</h2>
+    <p class="fs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore nulla similique consequuntur, voluptate soluta deleniti vel laborum. Reprehenderit voluptatum perspiciatis ipsam voluptatem, exercitationem animi magni placeat fugiat nesciunt quis.</p>
+    <hr>
+    <h2 class="cls">Doble Click </h2>
+    <p class="clickk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam quasi suscipit id voluptatum vel facere amet, consequatur nisi eum provident! Aut voluptates suscipit quis dignissimos earum iste officia natus!</p>
+    <hr>
+    <h2 class="cls">Click</h2>
+    <p class="click">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe nobis, atque molestias totam non delectus error molestiae quae soluta repudiandae beatae itaque omnis eum! Eum consequuntur nobis accusantium amet.</p>
+    <hr>
+    <ol id="list">
+        <h4>Fruits List</h4>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Pine Apple</li>
+        <li>Banana</li>
+    </ol>
+<hr>
+    <h2 class="cls">hide</h2>
+
+<p>This is a paragraph.</p>
+<p id="test">This is another paragraph.</p>
+
+<button>Click me</button>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+    <script>
+        $(document).ready(function(){
+            $("#list").css("color","red");
+        });
+
+        $(document).ready(function(){
+            $("h2").css("color","blue");
+        });
+
+        $(document).ready(function(){
+            $(".clss").css("border","3px solid green");
+        });
+
+        $(document).ready(function(){
+            $(".fs").css("fontSize","30px");
+        });
+        
+        $(document).ready(function(){
+            $(".fss").css("fontSize","30px");
+        });
+
+        $(document).ready(function(){
+            $(".fsss").css("backgroundColor","yellow");
+        });
+
+        $(document).click(function(){
+            $(".click").css("background-color","green");
+        });
+
+        $(document).dblclick(function(){
+            $(".clickk").css("background-color","red");
+        });
+
+        $(document).ready(function(){
+  $("button").click(function(){
+    $("#test").hide();
+  });
+});
+    </script>
+</body>
+</html>

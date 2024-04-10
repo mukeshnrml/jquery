@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		How to select all elements that contains
+		some specific CSS property using jQuery ?
+	</title>
+	
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+</head>
+
+<body style="text-align:center;">
+	
+	<h1 style="color:green;">
+		jQuery Selectors
+	</h1>
+	
+	<p id="IBM" style=
+			"font-size: 20px;font-weight: bold;">
+		Click on the button to get the ID's
+		of selected elements having same
+		property value pair.<br>CSS-
+		'font-weight: bold'
+	</p>
+	
+	<button onclick="GFG_Fun();">
+		Click Here
+	</button>
+	
+	<p id="ADIT" style=
+		"font-size: 24px; font-weight: bold;
+		color: green;">
+	</p>
+	
+	<script>
+		var down = document.getElementById('ADIT');
+
+		function GFG_Fun() {
+			var x = $('p').filter(function() {
+				return this.style.fontWeight == 'bold'
+			});
+			
+			down.innerHTML = "ID's of selected "
+				+ "elements are - <br>" + x[0].id
+				+ "<br>" + x[1].id;
+		}
+	</script>
+</body>
+
+</html>
